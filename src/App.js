@@ -12,11 +12,11 @@ import {
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <div className="navbar">
         <Navbar />
       </div>
-      <div className="main" style={{ marginLeft: "11.5rem" }}>
+      <div className="main">
         <Layout>
           <div className="routes">
             <Switch>
@@ -32,20 +32,13 @@ function App() {
               <Route exact path="/crypto/:coinId">
                 <CryptoDetails />
               </Route>
-              <Route exact path="/new">
+              <Route exact path="/news">
                 <News />
               </Route>
             </Switch>
           </div>
         </Layout>
-        <div
-          className="footer"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <div className="footer">
           <Typography.Title level={5} style={{ color: "white" }}>
             Crypto <br />
             All Rights Reserver
