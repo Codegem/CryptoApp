@@ -9,6 +9,7 @@ import {
   CryptoDetails,
   News,
 } from "./components";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,35 +21,25 @@ function App() {
         <Layout>
           <div className="routes">
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/CryptoApp/">
                 <HomePage />
               </Route>
-              <Route exact path="/exchanges">
+              <Route exact path="/CryptoApp/exchanges">
                 <Exchanges />
               </Route>
-              <Route exact path="/cryptocurrencies">
+              <Route exact path="/CryptoApp/cryptocurrencies">
                 <Cryptocurrencies />
               </Route>
-              <Route exact path="/crypto/:coinId">
+              <Route exact path="/CryptoApp/crypto/:coinId">
                 <CryptoDetails />
               </Route>
-              <Route exact path="/news">
+              <Route exact path="/CryptoApp/news">
                 <News />
               </Route>
             </Switch>
           </div>
         </Layout>
-        <div className="footer">
-          <Typography.Title level={5} style={{ color: "white" }}>
-            Crypto <br />
-            All Rights Reserver
-          </Typography.Title>
-          <Space>
-            <Link to="/CryptoApp/">HomePage</Link>
-            <Link to="/CryptoApp/exchanges">Exchanges</Link>
-            <Link to="/CryptoApp/news">News</Link>
-          </Space>
-        </div>
+        <Footer />
       </div>
     </div>
   );

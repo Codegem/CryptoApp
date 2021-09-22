@@ -49,20 +49,16 @@ const Navbar = () => {
       </div>
       {activeMenu && (
         <Menu theme="dark">
-          <Menu.Item icon={<HomeOutlined />} key={1} onClick={ToggleMenu}>
+          <Menu.Item icon={<HomeOutlined />} key={1}>
             <Link to="/CryptoApp/">Home</Link>
           </Menu.Item>
-          <Menu.Item icon={<FundOutlined />} key={2} onClick={ToggleMenu}>
-            <Link to="/CryptoApp/Cryptocurrencies">Cryptocurencies</Link>
+          <Menu.Item icon={<FundOutlined />} key={2}>
+            <Link to="/CryptoApp/cryptocurrencies">Cryptocurencies</Link>
           </Menu.Item>
-          <Menu.Item
-            icon={<MoneyCollectOutlined />}
-            key={3}
-            onClick={ToggleMenu}
-          >
+          <Menu.Item icon={<MoneyCollectOutlined />} key={3}>
             <Link to="/CryptoApp/exchanges">Exchanges</Link>
           </Menu.Item>
-          <Menu.Item icon={<BulbOutlined />} key={4} onClick={ToggleMenu}>
+          <Menu.Item icon={<BulbOutlined />} key={4}>
             <Link to="/CryptoApp/news">News</Link>
           </Menu.Item>
         </Menu>
