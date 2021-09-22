@@ -44,9 +44,9 @@ function App() {
             All Rights Reserver
           </Typography.Title>
           <Space>
-            <Link to="/">HomePage</Link>
-            <Link to="/exchanges">Exchanges</Link>
-            <Link to="/news">News</Link>
+            <Link to="/CryptoApp/">HomePage</Link>
+            <Link to="/CryptoApp/exchanges">Exchanges</Link>
+            <Link to="/CryptoApp/news">News</Link>
           </Space>
         </div>
       </div>

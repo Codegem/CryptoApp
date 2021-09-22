@@ -56,7 +56,7 @@ const Homepage = () => {
           Top 10 CryptoCurrencies
         </Title>
         <Title level={3} className="show-more">
-          <Link to="/cryptocurrencies">Show More</Link>
+          <Link to="/CryptoApp/cryptocurrencies">Show More</Link>
         </Title>
       </div>
       <Cryptocurrencies simplified />
@@ -65,7 +65,7 @@ const Homepage = () => {
           Latest Crypto News
         </Title>
         <Title level={3} className="show-more">
-          <Link to="/news">Show More</Link>
+          <Link to="/CryptoApp/news">Show More</Link>
         </Title>
       </div>
       <News simplified />
